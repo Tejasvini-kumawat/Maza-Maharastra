@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Reset and Common Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Open Sans",serif;
+    font-weight: 400;
+}
+html{
+    font-size: 62.5%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End of Common Styles */
+
+.section-1{
+    width:100%;
+    height: 100vh;
+    background:url(sahyadri.jpg)  no-repeat;
+     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .section-1-heading{
+        font-size: 7rem;
+        font-weight: 700;
+        color:#fff ;
+    }
+    .description{
+        font-size: 2rem;
+        font-weight: 700;
+        color:#fff ;
+    }
+    /*Navbar */
+
+.navbar{
+    width: 100%;
+    height: 4rem;
+    background-color:#47A992;
+    box-shadow: .2rem .2rem .5rem #555;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+.navbar-link{
+    font-size:1.7rem ;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing: 0.3rem;
+    transform: uppercase;
+    position: relative;
+transition: color 0.2s;
+}
+.navbar-link:hover{
+   color: #fff; 
+}
+.navbar-link::before{
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    right: -15%;
+    bottom: -.3rem;
+transition: width 0.2s;
+}
+.navbar-link:hover::before{
+    width: 130%;
+}
+/*End of the Navbar */
+.section-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  z-index: -1;
+ padding-top: 9rem;
+}
+.about{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.about h1{
+    font-size: 4rem;
+        font-weight: 700;  
+        background-color:#0E8388;
+        text-transform: uppercase;
+    width: 25rem;
+    letter-spacing: .3rem;
+    transform: skew(-10deg);
+    box-shadow: 0.2rem 0.2rem 0.5rem #555;
+    text-align: center;
+    z-index: -1;
+    
+}
+.para{
+    font-size: 2rem;
+        font-weight: 800;
+        padding: 5rem 6rem;
+        letter-spacing: 0.1rem;
+        width: auto;
+        height: 60rem;
+      
+margin: 5rem 10rem;
+border-radius: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:aqua;
+transition:scale 2s ,border 2s;
+transition-timing-function: linear;
+color:black
+}
+.para:hover{
+    transform: scale(1.1,1.1);
+    border: 5px solid #47A992;
+}
+.special{
+   width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.special h1{
+    font-size: 4rem;
+        font-weight: 700;  
+        background-color:#0E8388;
+   width: 70rem;
+   text-transform: uppercase;
+    letter-spacing: .3rem;
+    transform: skew(-10deg);
+    box-shadow: 0.2rem 0.2rem 0.5rem #555;
+    text-align: center;
+    color: #fff;
+    z-index: -1;
+}
+.symbols{
+    width:45vw;
+    height: 55rem;
+    margin: 9rem auto;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.symbol{
+    width:13vw;
+    height:16rem ;
+    margin: 1rem;
+    
+}
+.symbol img{
+    width:13vw;
+    height: 20vh;
+    border-radius: 7px;
+    transition:scale 2s,border 2s;
+transition-timing-function: linear;
+}
+.symbol h3{
+    font-weight: 700;
+    text-align: center;
+}
+.symbol img:hover{
+    transform: scale(1.1,1.1);
+    border: 5px solid #47A992;
+    
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 10vh;
+    color: #fff;
+    background-color: #2E4F4F;
+
+}
+.footer-heading{
+
+    
+    font-weight: 700;
+}
+/*End of Footer*/

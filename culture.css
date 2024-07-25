@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Reset and Common Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Open Sans",serif;
+    font-weight: 400;
+}
+html{
+    font-size: 62.5%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End of Common Styles */
+
+.section-1{
+    width:100%;
+    height: 100vh;
+    background:url(sahyadri.jpg)  no-repeat;
+     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .section-1-heading{
+        font-size: 7rem;
+        font-weight: 700;
+        color:#fff ;
+    }
+    .description{
+        font-size: 2rem;
+        font-weight: 700;
+        color:#fff ;
+    }
+    /*Navbar */
+
+.navbar{
+    width: 100%;
+    height: 4rem;
+    background-color:#47A992;
+    box-shadow: .2rem .2rem .5rem #555;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+.navbar-link{
+    font-size:1.7rem ;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing: 0.3rem;
+    transform: uppercase;
+    position: relative;
+transition: color 0.2s;
+}
+.navbar-link:hover{
+   color: #fff; 
+}
+.navbar-link::before{
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    right: -15%;
+    bottom: -.3rem;
+transition: width 0.2s;
+}
+.navbar-link:hover::before{
+    width: 130%;
+}
+/*End of the Navbar */
+/*Section 2*/
+.section-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9rem;
+    z-index: -1;
+   
+
+}
+.section-2-heading{
+    font-size: 4rem;
+    font-weight: 700;  
+    background-color:#0E8388;
+z-index: -1;
+width: 35rem;
+letter-spacing: .3rem;
+transform: skew(-10deg);
+box-shadow: 0.2rem 0.2rem 0.5rem #555;
+text-align: center;
+text-transform: uppercase;
+}
+.linear-text-gradient {
+    font-size: 60px;
+    background: linear-gradient(to top, red, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
+.culture-description{
+    margin: 7rem 6rem;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    background-color: aqua;
+    padding: 3rem;
+}
+/* Slideshow container */
+.slideshow-container {
+  
+  width:1000px;
+  
+    position: relative;
+    margin: auto;
+    margin-top: 7rem;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    color: crimson;
+    font-weight: 700;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .festivals{
+    margin: 5rem;
+  }
+.heading{
+    font-size: 40px;
+    background: linear-gradient(to top, red, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5rem auto;
+}
+.maharastrian-dresses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+}
+.dress-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:  5rem auto;
+}
+.dress-images img{
+    height: 50vh;
+    width: 50vw;
+    object-fit: cover;
+    margin:5rem auto;
+    border: 5px dotted #47A992;
+    transition: all 5s;
+}
+.dress-images img:hover{
+    transform: rotate(30deg) scale(0.5,0.5);;
+ 
+    cursor: pointer;
+}
+/*End of section 2*/
+/*footer*/
+footer{
+    width: 100%;
+    height: 10vh;
+    color: #fff;
+    background-color: #2E4F4F;
+
+}
+.footer-heading{
+
+    
+    font-weight: 700;
+}
